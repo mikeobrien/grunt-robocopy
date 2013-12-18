@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         robocopyProcess.stderr.on('data', log);
 
         robocopyProcess.on('exit', function(code) { 
-            if (code > 8) grunt.fail.fatal('Tests failed.');
+            if (code > 8) grunt.fail.fatal('Robocopy failed.');
             taskComplete();
         });    
     });
