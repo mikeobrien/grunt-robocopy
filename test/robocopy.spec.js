@@ -112,7 +112,7 @@ describe('task', function(){
 
         var command = robocopy.buildCommand(options);
 
-        expect(command.command).to.be('robocopy');
+        expect(command.path).to.be('robocopy');
 
         var args = command.args;
 

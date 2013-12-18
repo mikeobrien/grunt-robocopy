@@ -134,7 +134,7 @@ exports.buildCommand = function(options) {
     }
 
     return {
-        command: 'robocopy',
+        path: 'robocopy',
         args: args
     };
 };
