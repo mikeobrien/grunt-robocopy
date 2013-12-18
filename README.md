@@ -249,8 +249,8 @@ robocopy: {
             // is 30 (wait time 30 seconds). [/w:<N>]
             wait: 30,
             
-            // Saves the values specified in the /r and /w options as default settings in 
-            // the registry. [/reg]
+            // Saves the values specified in the retry.count and retry.wait options as 
+            // default settings in the registry. [/reg]
             saveAsDefault: true|false,
             
             // Specifies that the system will wait for share names to be defined 
