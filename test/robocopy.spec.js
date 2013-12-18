@@ -265,5 +265,29 @@ describe('task', function(){
 
     });
 
+    it('should all options', function() {
+
+        var options = {
+            source: 'c:/source/path/',
+            destination: 'c:/destination/path/',
+            files: [],
+            file: {
+                excludeDirs: ['tmp/', 'obj/'],
+            }
+        };
+
+        var command = robocopy.buildCommand(options);
+
+        expect(command.path).to.be('robocopy');
+
+        var args = command.args;
+
+        expect(args[0]).to.be('"c:\\source\\path"');
+        expect(args[1]).to.be('"c:\\destination\\path"');
+        expect(args[2]).to.be('/xd');
+        expect(args[3]).to.be('"tmp"');
+        expect(args[4]).to.be('"obj"');
+
+    });
 
 });

@@ -1,11 +1,17 @@
 var qualify = function(path) {
-    if (path instanceof Array) return path.map(function(p) { return '"' + p + '"'; });
-    else return '"' + path + '"';
+    var quote = function(p) { return '"' + p + '"'; };
+    if (path instanceof Array) return path.map(quote);
+    else return quote(path);
 };
 
 var toWindowsPath = function(path) {
-    if (path instanceof Array) return path.map(function(p) { return p.replace(/\//g, '\\'); });
-    else return path.replace(/\//g, '\\');
+    var clean = function(p) {
+        p = p.replace(/\//g, '\\').trim();
+        if (p.substr(-1) === '\\') p = p.substr(0, p.length - 1);
+        return p;
+    };
+    if (path instanceof Array) return path.map(clean);
+    else return clean(path);
 };
 
 exports.buildCommand = function(options) {
