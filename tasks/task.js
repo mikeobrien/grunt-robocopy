@@ -2,8 +2,10 @@ var process = require('child_process'),
     robocopy = require('./robocopy.js');
 
 module.exports = function(grunt) {
-    grunt.registerTask('robocopy', 'Runs robocopy.', function() {
-        var options = this.options();
+    grunt.registerMultiTask('robocopy', 'Runs robocopy.', function() {
+        var options = this.options({
+            files: ['*.*']
+        });
 
         var command = robocopy.buildCommand(options);
 
