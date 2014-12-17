@@ -1,6 +1,6 @@
 # grunt-robocopy 
 
-[![npm version](http://img.shields.io/npm/v/grunt-robocopy.svg)](https://npmjs.org/package/grunt-robocopy) [![build status](http://img.shields.io/travis/mikeobrien/grunt-robocopy.svg)](https://travis-ci.org/mikeobrien/grunt-robocopy) [![Dependency Status](http://img.shields.io/david/mikeobrien/grunt-robocopy.svg)](https://david-dm.org/mikeobrien/grunt-robocopy) [![npm downloads](http://img.shields.io/npm/dm/grunt-robocopy.svg)](https://npmjs.org/package/grunt-robocopy)
+[![npm version](http://img.shields.io/npm/v/grunt-robocopy.svg?style=flat)](https://npmjs.org/package/grunt-robocopy) [![build status](http://img.shields.io/travis/mikeobrien/grunt-robocopy.svg?style=flat)](https://travis-ci.org/mikeobrien/grunt-robocopy) [![Dependency Status](http://img.shields.io/david/mikeobrien/grunt-robocopy.svg?style=flat)](https://david-dm.org/mikeobrien/grunt-robocopy) [![npm downloads](http://img.shields.io/npm/dm/grunt-robocopy.svg?style=flat)](https://npmjs.org/package/grunt-robocopy)
 
 Grunt plugin for running [Robocopy](http://technet.microsoft.com/en-us/library/cc733145.aspx).
 NOTE: this plugin requires Grunt 0.4.x.
